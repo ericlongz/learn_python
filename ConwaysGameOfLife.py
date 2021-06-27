@@ -19,4 +19,5 @@ for i in range(height):
 			list_column.append(" ")
 		else:
 			list_column.append("#")
-			
+	list_row.append(list_column)
+print(list_row)
