@@ -7,19 +7,16 @@ for experimentNumber in range(10000):
 	ht_list = []
 	streak = 0
 	for i in range(100):
-		ht = random.randint(0,1)
-		if ht == 0:
-			ht_list.append('H')
-		else:
-			ht_list.append('T')
-		
+		ht_list.append(random.randint(0,1))
+
 	#Code that checks if there is a streak of 6 heads or tails in a row.
 		if i == 0:
 			pass
-		elif ht_list[i] == ht_list[i-1]:
-			streak = streak + 1
 		else:
-			streak = 0
+			if ht_list[i] == ht_list[i-1]:
+				streak = streak + 1
+			else:
+				streak = 0
 		
 		if streak == 6:
 			numberOfStreaks += 1
