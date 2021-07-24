@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+import sys
+
 def main():
 	global theBoard
 	
@@ -16,7 +18,6 @@ def main():
 		game_logic()
 	
 def game_logic():
-	import sys
 	top_values = 0
 	mid_values = 0
 	low_values = 0
